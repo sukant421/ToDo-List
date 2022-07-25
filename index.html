@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="interface">
+        <div>
+            <ul id="breadcrumbs-one">
+                <li><a href="">Status 1</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Working</a></li>
+                <li><a href="">Nurturing</a></li>
+            </ul>
+        </div>
+
+        <div class="miniNav">
+            <span class="miniBar">Activity</span>
+            <span class="miniBar">Information</span>
+
+        </div>
+        <hr>
+        <div class="parentSpace">
+            <span>
+                <div class="workSpace">
+                    <div class="navbar">
+                        <span class="content">Log calls</span>
+                        <span class="content">Tasks</span>
+
+                        <span class="content">Event</span>
+
+                        <span class="content">Make Note</span>
+
+                        <span class="content">Add Attachment</span>
+
+                        <span class="content">Activity Set</span>
+                        <span class="content">Custom Field</span>
+
+                    </div>
+                    <hr>
+                    <h4 id="NewTask">New Task</h4>
+
+                    <div class="spaces">
+                        <span>
+                            <div class="form1">
+                                <form onsubmit="return false;">
+                                    <label class="tags" for="fname">Task Type </label><br>
+                                    <select id="TaskType" class="inputs" name="Task Type">
+                                        <option></option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <label class="tags" for="lname">Assigned To</label> <br>
+                                    <select id="AssignedTo" class="inputs" name="AssignedTo">
+                                        <option></option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                    <br><br>
+                                    <div class="dates">
+                                        <span>
+                                            <label class="tags">Start Date</label> <br>
+                                            <input id="StartDate" type="date" class="dateInput">
+                                        </span>
+                                        <span>
+                                            <label class="tags">End Date</label> <br>
+                                            <input id="EndDate" type="date" class="dateInput">
+                                        </span>
+    
+                                    </div>
+                                    <br>
+    
+                                    <div>
+                                        <label for="reminder" class="tags">Remind On</label> <br>
+                                        <input id="Reminder" type="date" class="inputs">
+                                    </div>
+    
+                                  
+                                </form>
+                            </div>
+                        </span>
+                        <span>
+                            <div class="form1">
+                                <form onsubmit="return false;">
+                                    <label class="tags" for="fname">Subject </label><br>
+                                    <input id="Subject" type="text" class="inputs" value="">
+                                    <br>
+                                    <br>
+                                    <label class="tags" for="lname">Details</label> <br>
+                                    <textarea id="biginputs" name="w3review" rows="4" cols="50"></textarea>
+                                    <br>
+                                    <br>
+                                    <button id="cancel">cancel</button>
+                                    <button id="apply">Apply</button>
+                                </form>
+                            </div>
+                        </span>
+                        
+                    </div>
+                    <hr>
+                    
+                </div>
+            </span>
+            <span>
+                <div class="timeline">
+
+                    <select id="timelineFilter" >
+                        <option value="" disabled selected hidden>Filter by date</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                    </select>
+                                <hr>
+                    <div id="timelineEvents" class="timelineEvents">
+                        
+                    </div>
+                    
+            
+                </div>
+            </span>
+            
+
+        </div>
+        
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
